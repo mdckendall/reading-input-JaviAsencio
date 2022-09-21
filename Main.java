@@ -1,20 +1,19 @@
 import java.util.Scanner;
 
-public class Main {
+class Main {
 
   public static void main(String[] args) {
-
-    // Read the the input by using a Scanner.
-    Scanner scanner = new Scanner(System.in);
-
-    // Display in the console a line to write in
     
-
+// Ask the user to input a word.
+System.out.println("Enter a word:");
+    
+    // Read the input by using a Scanner.
+    Scanner word = new Scanner(System.in);
+    
     // String the message by using a String
-    String message = scanner.nextLine();
+    String someString = word.nextLine();
 
-    // Print out the message that someone wrote.
-    System.out.println(message);
-    
+    // Print out the message that someone wrote while mentioning the length of the string.
+    System.out.println(someString.length());
   }
 }
